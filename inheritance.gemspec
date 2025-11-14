@@ -23,6 +23,16 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "rails", ">= 8.1.1"
+  spec.add_dependency "bcrypt"
+  spec.add_dependency "responders"
+  spec.add_dependency "rails-i18n"
+  spec.add_dependency "simple_form"
+  spec.add_dependency "active_model_serializers"
+  spec.add_dependency "caxlsx"
+  spec.add_dependency "caxlsx_rails"
+  spec.add_dependency "jsbundling-rails"
+  spec.add_dependency "importmap-rails"
+  spec.add_dependency "sprockets-rails"
   spec.post_install_message = <<-MESSAGE
 ==================================================
   🎉 GEMA INHERITANCE INSTALADA CON ÉXITO 🎉
