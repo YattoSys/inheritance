@@ -4,14 +4,40 @@
   <title>Inheritance</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <%= favicon_link_tag "inheritance/favicon.png" %>
 
   <%= yield :head %>
 
-  <%= stylesheet_link_tag    "inheritance/application", media: "all" %>
+  <%= stylesheet_link_tag "inheritance/core" %>
+  <%= stylesheet_link_tag "inheritance/demo" %>
+  <%= stylesheet_link_tag "inheritance/perfect-scrollbar" %>
+  <%= stylesheet_link_tag "inheritance/iconify-icons" %>
+  <%= javascript_include_tag "inheritance/helpers"%>
+  <%= javascript_include_tag "inheritance/config"%>
+  
 </head>
 <body>
-
-<%= yield %>
-
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <%= render "shared/menu" %>
+      <!-- Layout container -->
+      <div class="layout-page">
+        <%= render "shared/navbar" %>
+        <div class="content-wrapper">
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="layout-demo-wrapper">
+            <%= yield %>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <%= javascript_include_tag "inheritance/jquery" %>
+  <%= javascript_include_tag "inheritance/popper" %>
+  <%= javascript_include_tag "inheritance/bootstrap" %>
+  <%= javascript_include_tag "inheritance/perfect-scrollbar" %>
+  <%= javascript_include_tag "inheritance/menu"%>
+  <%= javascript_include_tag "inheritance/main"%> 
 </body>
 </html>
