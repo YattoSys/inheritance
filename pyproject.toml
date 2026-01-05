@@ -13,3 +13,23 @@ authors = [
     {name = "Kirito", email = "agarcia@aglabs.com"}
 ]
 keywords = ["flask", "rbac", "roles y permisos", "herencia"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/YattoSys/inheritance"
+"Bug Tracker" = "https://github.com/YattoSys/inheritance/issues"
+
+# Configuración para encontrar el paquete dentro de la carpeta 'src'
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["inheritance*"]  # Esto busca la carpeta que contiene el código real
